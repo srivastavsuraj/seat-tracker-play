@@ -1,0 +1,8 @@
+@(message : String) @main("Welcome"){ @if(flash.contains("success")) {
+<p class="success" style="color: blue">@flash.get("success")</p>
+}
+<div align="center">
+	<h1>*******Welcome*******</h1>
+	<p>Mr. @message. You have successfully entered into Play World !!!</p>
+</div>
+}

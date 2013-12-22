@@ -1,0 +1,29 @@
+@(seatDetails : List[model.Seat])
+
+@main("Seat Allocation Details"){
+<h1>Seat Allocation Details</h1>
+<table border="1">
+  <tr>
+    <th>Desk No.</th>
+    <th>Location</th>
+    <th>Employee Name</th>
+    <th>Employee Id</th>
+    <th/>
+  </tr>
+  @for(seat <- seatDetails){
+  <tr>
+    <td>@seat.getDeskNumber</td>
+    <td>@seat.getLocation</td> 
+    <td>@seat.getEmpName</td>
+    <td>@seat.getEmpId</td>
+    <td><input type="button" value="Delete"></td>
+  </tr>
+  }
+  
+</table>
+
+
+
+
+
+}
